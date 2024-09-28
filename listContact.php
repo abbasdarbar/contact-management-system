@@ -12,7 +12,7 @@ try {
     $contacts = $statement->fetchAll(PDO::FETCH_ASSOC);
     
 } catch (PDOException $e) {
-    echo 'Error: ' . $e->getMessage();
+    echo $e->getMessage();
     exit;
 }
 
